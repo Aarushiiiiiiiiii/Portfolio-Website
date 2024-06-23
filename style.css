@@ -5,8 +5,15 @@
 
 .sidebar{
     background-color: rgb(155, 128, 93);
+    width:20vw;
 }
 
 .main{
     background-color: beige;
+    width:80vw;
+}
+
+.container{
+    display:flex;
+    
 }
