@@ -6,7 +6,7 @@ Welcome to my portfolio website repository! This project showcases my skills and
 Index.html----The html file containing codes
 styles.css----The styles sheet
 
-Some screenshots at end of thia page of the website
+Website image saved a jpeg and uploaded in the repository
 
 
 --Features
