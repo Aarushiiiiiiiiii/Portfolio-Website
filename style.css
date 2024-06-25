@@ -1,19 +1,278 @@
-*{
-    margin:0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Playwrite+MX:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+MX:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+MX:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap');
+
+.main {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #462828;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar{
-    background-color: rgb(155, 128, 93);
-    width:20vw;
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-.main{
-    background-color: beige;
-    width:80vw;
+.devinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.container{
-    display:flex;
-    
+.about-me-container {
+    flex: 1;
+    margin: 20px;
 }
+
+.hello {
+    font-family: "Playwrite MX", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 20px;
+    /* add some space between hello and job */
+    justify-content: center;
+    position: relative;
+    /* add this */
+}
+
+.hello::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    /* adjust the position to your liking */
+    width: 55px;
+    /* increase the width */
+    height: 50px;
+    /* increase the height */
+    background-image: url('cursor.png');
+    /* replace with your cursor image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.job {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    margin-top: 130px;
+    justify-content: center;
+    position: relative;
+    /* add this */
+}
+
+.job::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 10px;
+    /* adjust the radius for softer edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* adjust the shadow */
+    z-index: -1;
+    /* make sure it's behind the text */
+}
+
+.devpic {
+    max-width: 5%;
+    /* adjust the width as needed */
+    height: auto;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* add a soft shadow around the image */
+    border-radius: 10px;
+    /* add a rounded corner to the shadow */
+}
+
+.about-me-container {
+    flex: 1;
+    margin: 20px;
+    justify-items: center;
+    max-width: fit-content;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #F5F5F5;
+    /* add this to change the text color to off-white */
+}
+
+.about-me p strong {
+    text-decoration: underline;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.service-tab {
+    width: 30%;
+    margin: 20px;
+    border: 1px solid #462828;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #c49d92;
+    /* Add a background color to the service tab */
+}
+
+.service-tab input {
+    display: none;
+}
+
+.service-tab label {
+    display: block;
+    padding: 20px;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 24px;
+    /* Increase font size to 24px */
+}
+
+.service-tab .tab-content {
+    padding: 20px;
+}
+
+.service-tab.tab-content h3 {
+    margin-top: 0;
+    color: #f5f5f5;
+    /* Blue color */
+}
+
+.cv-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cv-text {
+    width: 60%;
+}
+
+.cv-text h2 {
+    margin-top: 0;
+}
+
+.cv-text p {
+    margin-bottom: 20px;
+}
+
+/* Add a blank container to keep some distance between services and CV sections */
+.blank-container2 {
+    height: 30px;
+    /* adjust the height as needed */
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.blank-container1 {
+    height: 30px;
+    /* adjust the height as needed */
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+
+}
+
+.cv-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cv-text {
+    width: 60%;
+}
+
+.cv-text h2 {
+    margin-top: 0;
+}
+
+.cv-text p {
+    margin-bottom: 20px;
+}
+
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    /* Change from row to column */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cv-container button {
+    margin-bottom: 20px;
+    /* Add some space between buttons */
+}
+
+.cv-container button:hover {
+    background-color: #b18fad;
+}
+
+.cv-text {
+    text-align: left;
+
+    width: 80%;
+    /* Add this line to justify the text to the left */
+}
+
+.cv-text h2 {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.mypic {
+    margin-bottom: 20px;
+}
+
+.about-me h2 {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust the layout for screens smaller than 768px */
+    .main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    @media (max-width: 480px) {
+        body {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+    }
